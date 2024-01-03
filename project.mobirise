@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-03 16:21",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://wonderlend-time.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://wonderlend-time.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "m4jvqn0bon",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Wonderland Time™ | Home Official Site",
+        "meta_descr": "WebIn the world of cryptocurrency, Wonderland Time has emerged as a groundbreaking project, introducing a new paradigm for stablecoins through its innovative algorithmic design. As …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://wonderlandtime1.hpage.com\"><img src=\"@PROJECT_PATH@/assets/images/wonderland.png\" alt=\"Wonderland Time\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u0ipl8AxGf",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://volta.club/\" class=\"text-primary\">Wonderland Time</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Exploring <a href=\"https://wonderlend-time.github.io/\" class=\"text-primary\">Wonderland Time</a>: A Journey Through the Temporal Landscape of Imagination</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the realm of fiction and fantasy, there exists a peculiar dimension known as Wonderland Time. This enchanting concept transcends the boundaries of conventional timekeeping and offers a whimsical space where time operates in ways that defy the laws of physics and logic. Wonderland Time is not governed by the ticking of clocks or the relentless march of seconds; instead, it dances to the rhythm of imagination and fantasy.\n<br>\n<br>Unraveling the Notions of Time\n<br>\n<br>In Lewis Carroll's timeless classic, \"Alice's Adventures in Wonderland,\" <a href=\"https://wonderlend-time.github.io/\" class=\"text-primary\">Wonderland Time</a> takes center stage as Alice embarks on a surreal journey down the rabbit hole. As Alice navigates this strange and fantastical world, she encounters peculiar characters and experiences events that challenge her understanding of time. The Mad Hatter's tea party, for instance, epitomizes the eccentricity of Wonderland Time, where the clock is stuck at six o'clock forever, and the Hatter and March Hare are trapped in an eternal tea-time loop.\n<br>\n<br>The fluidity of time in Wonderland introduces the notion that temporal boundaries are not fixed but are subject to the whims of the fantastical universe. This departure from the rigidity of the real-world temporal constraints allows for a richer narrative experience, where the unexpected becomes the norm, and the ordinary is infused with extraordinary possibilities.\n<br>\n<br>Time as a Narrative Device\n<br>\n<br>Wonderland Time serves as a potent narrative device, providing authors and storytellers with a canvas to paint their tales with vibrant strokes of creativity. It offers a playground where temporal conventions can be bent, twisted, and reshaped to suit the needs of the narrative. The ability to manipulate time in Wonderland opens the door to endless storytelling possibilities, encouraging authors to think beyond the linear progression of events.\n<br>\n<br>In literature, Wonderland Time has influenced a myriad of works, inspiring authors to experiment with temporal structures and challenge readers' perceptions. Time travel, a common motif in science fiction and fantasy genres, often finds its roots in the fantastical realms of Wonderland, where the impossible becomes not only possible but also wonderfully plausible.\n<br>\n<br>Symbolism of Time in Wonderland\n<br>\n<br>Beyond its narrative utility, Wonderland Time holds symbolic significance, offering profound insights into the human psyche. The concept challenges our preconceived notions about the inevitability and linearity of time, prompting reflection on the subjective nature of temporal experiences. Wonderland Time invites us to question the societal norms that dictate our lives, urging us to break free from the shackles of routine and embrace the spontaneity of the unknown.\n<br>\n<br>The White Rabbit, a prominent character in Carroll's tale, epitomizes the relentless pursuit of time. Constantly in a hurry, the White Rabbit represents the societal pressure to conform to strict temporal expectations. Wonderland, on the other hand, provides a sanctuary where such pressures are cast aside, and individuals are encouraged to embrace the present moment without the burden of past regrets or future anxieties.\n<br>\n<br>Temporal Absurdities in Wonderland\n<br>\n<br>One of the most iconic scenes in \"Alice's Adventures in Wonderland\" involves the Queen of Hearts and her infamous croquet match. In this chaotic game, flamingos serve as mallets, hedgehogs as balls, and the concept of keeping score is nothing short of absurd. Wonderland Time amplifies the absurdity, as the Queen's whimsical decrees dictate the flow of the game without any regard for temporal coherence.\n<br>\n<br>This absurdity is a celebration of the nonsensical, challenging the seriousness with which society often approaches the passing of time. Wonderland Time invites us to embrace the playful and irrational aspects of existence, encouraging a departure from the rigid structures that govern our lives.\n<br>\n<br>Philosophical Implications of Wonderland Time\n<br>\n<br>Wonderland Time extends beyond the realm of fiction, transcending into philosophical musings about the nature of time itself. The philosophical implications of Wonderland Time prompt us to reconsider our understanding of temporal reality and question whether time is an absolute, objective entity or a subjective construct influenced by perception.\n<br>\n<br>The Cheshire Cat, with its enigmatic grin and ability to appear and disappear at will, becomes a philosophical guide through Wonderland. The Cat's statement, \"We're all mad here,\" challenges the very foundation of sanity and rationality, inviting us to explore the idea that time, like sanity, is a subjective construct shaped by individual perspectives.\n<br>\n<br>Conclusion\n<br>\n<br>Wonderland Time is a captivating concept that transcends the boundaries of traditional temporal frameworks, offering a fantastical space where imagination reigns supreme. As a narrative device, Wonderland Time has inspired countless authors to explore the limitless possibilities of temporal manipulation, giving rise to tales that challenge our perceptions and expand our understanding of the fantastical.\n<br>\n<br>Symbolically, Wonderland Time invites us to question societal expectations and embrace the spontaneity of the present moment. It challenges the seriousness with which we often approach time, encouraging us to revel in the absurdity of existence. Philosophically, Wonderland Time prompts us to reconsider the nature of time itself, inviting us to explore whether time is an absolute reality or a subjective construct influenced by perception.\n<br>\n<br>In the end, Wonderland Time is not merely a literary device; it is an invitation to step through the looking glass and explore a realm where time dances to the whims of imagination, and the ordinary becomes extraordinary. It is a celebration of the fantastical, the absurd, and the philosophical, reminding us that, in Wonderland, the only limit to what is possible is the boundless expanse of our own imagination.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u0iplV2Aag",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
